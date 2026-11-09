@@ -1,0 +1,67 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #172033;
+  background: #f1f5f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 380px);
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgb(15 23 42 / 10%);
+  text-align: center;
+}
+
+.card p {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.card p:nth-of-type(2) {
+  margin-top: 28px;
+  color: #172033;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card button {
+  margin: 4px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.card button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.card button:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 3px;
+}
